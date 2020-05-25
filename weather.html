@@ -3,22 +3,73 @@
 <html>
 <head>
 	<title>my weather app</title>
+	<meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="bootstrap-4.4.1-dist/css/bootstrap.min.css"> 
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	<style type="text/css">
+		body{
+			background-image: url(https://images.unsplash.com/photo-1590305840770-42af27afb3e6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+			    background-repeat: no-repeat;
+    			background-size: cover;
+		}
+	</style>
 </head>
 <body>
-<nav class="navbar navbar-dark" style="background-color: #000;">
+<nav class="navbar navbar-dark fixed-top" style="background-color: #000;">
 	<div class="container">
 		<a href="" class="navbar-brand">Wearther App</a>
 	</div>
 </nav>
+
+<div class="container" style="margin-top: 65px;">
+	<div class="row">
+		<div class="col-md-12" style="font-weight: bolder;color: #fff;">
+			<p style="font-weight: bolder;">Country : <span id="currentLocation" style="font-weight: normal;"></span></p>
+			<p style="font-weight: bolder;">City name : <span id="currentcity" style="font-weight: normal;"></span></p>
+			<p style="font-weight: bolder;">Weather description : <span id="weather-desc" style="font-weight: normal;"></span></p>
+			
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-3 col-6 p-2 text-center" >
+			<div class="card card-body" style="min-height: 200px;background: rgba(245, 245, 245, 0.2);color: #fff;">
+				<p><i class="fas fa-thermometer-quarter" style="font-size: 40px;"></i></p>
+				<p>Tempereture</p>
+				<div id="weather-temp"></div>
+			</div>
+		</div>
+		<div class="col-md-3 col-6 p-2 text-center" >
+			<div class="card card-body" style="min-height: 200px;background: rgba(245, 245, 245, 0.2);color: #fff">
+				<p><i class="fas fa-tachometer-alt" style="font-size: 40px;"></i></p>
+				<p>Pressure</p>
+				<div id="weather-pressure"></div>
+			</div>
+		</div>
+		<div class="col-md-3 col-6 p-2 text-center" >
+			<div class="card card-body" style="min-height: 200px;background: rgba(245, 245, 245, 0.2);color: #fff">
+				<p><i class="fas fa-tint-slash" style="font-size: 40px;"></i></p>
+				<p>Humidity</p>
+				<div id="weather-hum"></div>
+			</div>
+		</div>
+		<div class="col-md-3 col-6 p-2 text-center" >
+			<div class="card card-body" style="min-height: 200px;background: rgba(245, 245, 245, 0.2);color: #fff">
+				<p><i class="fas fa-wind" style="font-size: 40px;"></i></p>
+				<p>wind speed</p>
+				<div id="wind-speed"></div>
+			</div>
+		</div>
+	</div>
+</div>
 
  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) 27d375664ee8c6ca5fc7c31a39233732  -->
 <script src="js/jquery-3.4.1.slim.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
 <script src="bootstrap-4.4.1-dist/js/bootstrap.bundle.min.js"></script>
-<script type="text/javascript" src="js/db.js"></script>
-<script type="text/javascript" src="js/interface.js"></script>
 <script type="text/javascript" src="js/application.js"></script>
+<script type="text/javascript" src="js/interface.js"></script>
+
 </body>
 </html>
