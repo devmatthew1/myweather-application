@@ -16,7 +16,7 @@ class Weather{
 			        var latitude = position.coords.latitude;
 			        var longitude = position.coords.longitude;
 
-			     	fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=27d375664ee8c6ca5fc7c31a39233732&units=metric`)
+			     	fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=27d375664ee8c6ca5fc7c31a39233732&units=metric`)
 					.then((response)=>{
 						return response.json();
 					})
